@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "151aee5e-8af8-4e10-96e8-7cab3558d31d",
+		"name": "Recipes App API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38758892"
+	},
+
+	"item": [
+		{
+			"name": "http://localhost:3001/api/recipes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Paneer Butter Masala\",\r\n  \"description\": \"A rich and creamy curry made with paneer (Indian cottage cheese) simmered in a tomato-based gravy with butter and cream.\",\r\n  \"ingredients\": [\r\n    \"200g paneer, cubed\",\r\n    \"2 tomatoes, pureed\",\r\n    \"1 onion, finely chopped\",\r\n    \"1 tbsp ginger-garlic paste\",\r\n    \"2 tbsp butter\",\r\n    \"1 tbsp cream\",\r\n    \"1 tsp turmeric powder\",\r\n    \"2 tsp garam masala\",\r\n    \"1 tsp red chili powder\",\r\n    \"1 tsp kasuri methi (dried fenugreek leaves)\",\r\n    \"Salt to taste\",\r\n    \"Fresh coriander leaves for garnish\"\r\n  ],\r\n  \"instructions\": \"Heat butter in a pan and sauté onions until golden brown. Add ginger-garlic paste and cook for another minute. Add the tomato puree, turmeric powder, red chili powder, and garam masala. Cook until the oil separates. Add the paneer cubes and cook for 5-7 minutes. Stir in the cream and kasuri methi. Simmer for a few more minutes and garnish with coriander leaves. Serve hot with naan or rice.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/recipes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"recipes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/recipes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/recipes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"recipes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/recipes/6700108472a5766bc5a5ca41",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/recipes/6700108472a5766bc5a5ca41",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"recipes",
+						"6700108472a5766bc5a5ca41"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/recipes/6700108472a5766bc5a5ca41",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Chicken Biryani\",\r\n  \"description\": \"A fragrant and flavorful rice dish cooked with marinated chicken, layered with aromatic basmati rice, herbs, and spices, cooked to perfection in a traditional dum style.\",\r\n  \"ingredients\": [\r\n    \"2 cups basmati rice\",\r\n    \"600g chicken, marinated with yogurt, ginger-garlic paste, and spices\",\r\n    \"2 large onions, sliced and fried until golden (birista)\",\r\n    \"3 tomatoes, chopped\",\r\n    \"2 tbsp ginger-garlic paste\",\r\n    \"2 tbsp biryani masala\",\r\n    \"1 tsp turmeric powder\",\r\n    \"1 tsp red chili powder\",\r\n    \"4 cups water\",\r\n    \"Fresh mint and coriander leaves\",\r\n    \"Saffron soaked in warm milk\",\r\n    \"3 tbsp ghee\",\r\n    \"Salt to taste\",\r\n    \"Juice of 1 lemon\"\r\n  ],\r\n  \"instructions\": \"Cook the basmati rice until it is 70% done and set aside. Marinate the chicken with yogurt, ginger-garlic paste, turmeric, chili powder, and biryani masala for at least 2 hours. Heat ghee in a pan and fry the onions (birista) until golden brown, then set aside. In the same pan, cook the marinated chicken until almost done. In a deep pot, layer the rice and chicken, adding mint, coriander, fried onions, saffron milk, and lemon juice in between layers. Cover the pot and cook on low heat (dum) for 25-30 minutes. Serve hot with raita.\"\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/recipes/6700108472a5766bc5a5ca41",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"recipes",
+						"6700108472a5766bc5a5ca41"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/api/recipes/6700108472a5766bc5a5ca41",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/recipes/6700108472a5766bc5a5ca41",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"recipes",
+						"6700108472a5766bc5a5ca41"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

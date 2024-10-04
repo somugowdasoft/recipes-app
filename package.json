@@ -1,0 +1,20 @@
+{
+  "name": "recipes-app",
+  "version": "1.0.0",
+  "description": "The Recipes App is a complete CRUD application built with Node.js, Express.js, and Mongoose, following the MVC pattern. It allows users to manage recipes by performing operations like creating, reading, updating, and deleting recipes. The application integrates with MongoDB for data storage and provides a comprehensive API with detailed documentation using Postman.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "mongoose": "^8.7.0",
+    "nodemon": "^3.1.7"
+  }
+}
