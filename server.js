@@ -24,12 +24,6 @@ app.use(bodyParser.json());
 //Routes
 app.use('/api', recipeRoutes);
 
-// Catch all Unhandled Routes
-app.use((req, res, next) => {
-    const error = new Error('Not Found');
-    error.status = 404;
-    next(error);
-});
 
 //startthe server
 const PORT = process.env.PORT || 3001;
