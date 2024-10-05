@@ -10,10 +10,10 @@ const recipeControllers = require("../controllers/recipeController");
 
 //define the route 
 
-router.post('/recipes', recipeControllers.createRecipe);
-router.get('/recipes', recipeControllers.getAllRecipes);
-router.get('/recipes/:id', recipeControllers.getRecipeById);
-router.put('/recipes/:id', recipeControllers.updateRecipe);
-router.delete('/recipes/:id', recipeControllers.deleteRecipe);
+router.post('/', recipeControllers.createRecipe);
+router.get('/', recipeControllers.getAllRecipes);
+router.get('/:id', recipeControllers.getRecipeById);
+router.put('/:id', recipeControllers.updateRecipe);
+router.delete('/:id', recipeControllers.deleteRecipe);
 
 module.exports = router;

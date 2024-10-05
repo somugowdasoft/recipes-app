@@ -22,7 +22,7 @@ connectDB();
 app.use(bodyParser.json());
 
 //Routes
-app.use('/api', recipeRoutes);
+app.use('/api/recipes', recipeRoutes);
 
 
 //startthe server
